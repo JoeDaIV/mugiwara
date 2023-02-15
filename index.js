@@ -87,4 +87,3 @@
 }(window, window._));
 
 
-mugiwara.phyz.calcDistance()
