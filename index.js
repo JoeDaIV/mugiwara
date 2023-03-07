@@ -19,7 +19,7 @@
 
           distanceY = pointB.y - pointA.y,
 
-          distance = Math.sort(distanceX * distanceX + distanceY * distanceY);
+          distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
 
         return distance;
 
