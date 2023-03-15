@@ -1,6 +1,17 @@
 (function (window, _) {
   window.mugiwara = window.mugiwara || {
     numz: {
+      /**
+       * @param {*} pointA is the first point on screen
+       * @param {*} pointB is the second point on screen
+       * @param {number} distanceX is the distance between pointB.x - pointA.x,
+       * @param {number} distanceY is the distance between pointB.y - pointA.y,
+       * @param {number} radians - a numeric value from the distance in radians
+       * @param {number} degrees - calculates a numeric value from radians into degrees
+       * @param {number} radiansToDegrees calculates radians into degrees
+       * @param {number} degreesToRadians calculates degrees into radians
+       * @returns {number} returns the degrees
+       */
       getAngleDegrees(pointA, pointB){
         const
         distanceX = pointB.x - pointA.x,
