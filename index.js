@@ -4,8 +4,8 @@
       /**
        * @param {*} pointA is the first point on screen
        * @param {*} pointB is the second point on screen
-       * @param {number} distanceX is the distance between pointB.x - pointA.x,
-       * @param {number} distanceY is the distance between pointB.y - pointA.y,
+       * @param {number} pointA.x 
+       * @param {number} pointA.y
        * @param {number} radians - a numeric value from the distance in radians
        * @param {number} degrees - calculates a numeric value from radians into degrees
        *
@@ -14,8 +14,8 @@
        */
       getAngleDegrees(pointA, pointB) {
         const
-          distanceX = pointB.x - pointA.x,
-          distanceY = pointB.y - pointA.y,
+          distanceX = pointA.x - pointB.x,
+          distanceY = pointA.y - pointB.y,
           radians = Math.atan2(distanceY, distanceX),
           degrees = radians * 180 / Math.PI;
         return degrees;
